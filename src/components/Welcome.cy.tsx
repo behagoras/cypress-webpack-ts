@@ -1,4 +1,4 @@
-import Welcome from './Welcome';
+import Welcome from './Welcome.tsx';
 
 describe('Welcome', () => {
   it('should mount with greeting', () => {

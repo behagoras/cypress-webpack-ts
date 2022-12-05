@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import LoginForm from './components/LoginForm';
-import Welcome from './components/Welcome';
+import LoginForm from './components/LoginForm.tsx';
+import Welcome from './components/Welcome.tsx';
 
 function App() {
   const [isAuthed, setIsAuthed] = useState(false);

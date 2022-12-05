@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": false,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "types": ["./cypress/components.d.ts"],
+  },
+  "include": [
+    "./src/**/*.ts",
+    "cypress.d.ts",
+    "./cypress/components.d.ts",
+    "src/components/Button.cy.tsx"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

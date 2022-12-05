@@ -1,4 +1,5 @@
-import LoginForm from './LoginForm';
+import * as React from 'react'
+import LoginForm from './LoginForm.tsx';
 
 describe('LoginForm', () => {
   it('should mount the component', () => {

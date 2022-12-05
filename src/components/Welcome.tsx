@@ -1,7 +1,10 @@
 import React from 'react';
-import Button from './Button';
+import Button from './Button.tsx';
 
-const Welcome = ({username, onLogout}) => {
+const Welcome: React.FC<{
+  username: string;
+  onLogout: () => void;
+}> = ({username, onLogout}) => {
   return (
     <div className="max-w-screen-sm p-12 mx-auto bg-gray-50 rounded-md shadow-lg">
       <h1 className="text-2xl">Welcome {username}!</h1>

@@ -1,6 +1,12 @@
 import React from 'react';
 
-const InputField = (props) => {
+const InputField: React.FC<
+  React.InputHTMLAttributes<HTMLInputElement> & {
+    label: string;
+    submitted: boolean;
+    requiredMessage: string;
+  }
+> = (props) => {
   const { className, label, submitted, requiredMessage, ...inputProps } = props;
   return (
     <label className="flex flex-col text-lg text-gray-800 mb-2">

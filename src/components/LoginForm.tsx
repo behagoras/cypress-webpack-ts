@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
-import Button from './Button';
-import InputField from './InputField';
+import Button from './Button.tsx';
+import InputField from './InputField.tsx';
 
-const LoginForm = ({ onLogin, title = 'Log In', errorMessage }) => {
+const LoginForm: React.FC<{
+  onLogin: ({ username,password}) => void;
+  title: string;
+  errorMessage: string;
+}> = ({ onLogin, title = 'Log In', errorMessage }) => {
   const [submitted, setSubmitted] = useState(false);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');

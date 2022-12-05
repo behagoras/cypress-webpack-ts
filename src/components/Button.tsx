@@ -1,6 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 
-const Button = (props) => {
+const Button: React.FC<
+  React.ButtonHTMLAttributes<HTMLButtonElement>
+> = (props) => {
   const { className, children, ...rest } = props;
   return (
     <button
@@ -8,13 +10,13 @@ const Button = (props) => {
               py-2
               px-6
               rounded-sm
-              self-start      
+              self-start
               text-white
               bg-cy-blue
               duration-20
               border-solid border-2 border-transparent
               hover:border-gray-700 hover:bg-cy-blue
-              disabled:opacity-50   
+              disabled:opacity-50
               disabled:cursor-not-allowed
               ${className}
             `}
